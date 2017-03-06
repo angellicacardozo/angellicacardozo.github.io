@@ -229,8 +229,9 @@ html, body {
       .servicosgrid .col:nth-child(3n+1) {
         clear: left; } }
 body #mc_embed_signup {
-  border: 0.063em solid rgba(0, 0, 0, 0.8);
-  padding: 30px; }
+  border: 0.063em solid rgba(0, 0, 0, 0.8); }
+  body #mc_embed_signup form {
+    padding: 0; }
   body #mc_embed_signup .button {
     background-color: rgba(85, 157, 255, 0.5); }
   body #mc_embed_signup .button:hover {
@@ -241,6 +242,16 @@ body #mc_embed_signup {
 .alert-mailchimp {
   float: right; }
 
+@media screen and (max-width: 480px) {
+  body #mc_embed_signup {
+    padding: 10px;
+    height: 100%;
+    overflow: auto; }
+    body #mc_embed_signup input.email {
+      width: 100%; } }
+@media screen and (min-width: 800px) {
+  body #mc_embed_signup {
+    padding: 30px; } }
 @media screen and (max-width: 480px) {
   article p {
     margin-left: 0; }
